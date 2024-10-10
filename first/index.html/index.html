@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digits Number Guesser</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div id="main-screen" class="centered">
+            <h1 class="title">Digits Number Guesser</h1>
+            <button class="btn start-game">Start Game</button>
+            <button class="btn instructions-btn">Instructions</button>
+        </div>
+
+        <!-- Pop-up for Instructions -->
+        <div id="instructions-popup" class="popup hidden">
+            <div class="popup-content">
+                <h2>Instructions</h2>
+                <p>1. Guess the correct 4-digit or 5-digit number.</p>
+                <p>2. You have 3 chances to guess the number correctly.</p>
+                <button class="btn close-popup">Close</button>
+            </div>
+        </div>
+
+        <!-- Option Screen for 4-digit and 5-digit -->
+        <div id="option-screen" class="hidden centered">
+            <div class="zoom-box">
+                <h2>Choose your Number</h2>
+                <button class="btn option" data-digits="4">4-digit Number</button>
+                <button class="btn option" data-digits="5">5-digit Number</button>
+            </div>
+        </div>
+
+        <!-- Game Screen -->
+<!-- Game Screen -->
+<div id="game-screen" class="hidden centered">
+    <h2 class="game-title">4-Digit Number Guesser</h2>
+    <input type="text" class="input" id="guess-input" maxlength="5" placeholder="     Enter the Correct Number">
+    <button class="btn submit-btn">Submit</button>
+    <p id="feedback">Make a guess!</p>
+    <p id="hearts">❤️❤️❤️</p>
+    <button class="btn hint-btn">Hint</button>
+    <button class="btn back-btn">Back</button>
+    <audio id="win-sound" src="win.mp3"></audio>
+    <audio id="lose-sound" src="lose.mp3"></audio>
+</div>
+
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

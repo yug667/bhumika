@@ -1,0 +1,127 @@
+/* General Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, #434343, #000000);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: white;
+}
+
+.game-container {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.input {
+    height: 40px;
+    border-radius: 17px;
+}
+
+/* Title Style */
+.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffdf00;
+    margin-bottom: 20px;
+}
+
+/* Button Style */
+.btn {
+    background-color: #3498db;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    margin: 10px 0;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+/* Pop-up and Zoom-in Box Style */
+.popup, .zoom-box {
+    background-color: #2c3e50;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    animation: zoomIn 0.5s ease;
+}
+
+.popup h2, .popup p {
+    color: white;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    display: none;
+}
+
+.centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#winning-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.popup-content {
+    background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Animation for Zoom-in Effect */
+@keyframes zoomIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+
+/* Hearts */
+#hearts {
+    font-size: 2rem;
+    color: red;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Back Button Style */
+.back-btn {
+    background-color: #e74c3c;
+}
+
+.back-btn:hover {
+    background-color: #c0392b;
+}
